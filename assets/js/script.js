@@ -1,7 +1,7 @@
 // Make a game where a player has 10 seconds to enter text and figure out a word. If the word is complete, they win. If it isn't complete by the time the timer hits 0, they fail.
 
 // I need a list of words that can be used for the game
-const words = ["kobolds", "goblins", "orcs", "chimeras", "dragons", "leviathans", "golems", "beholders", "bulettes", "mimics", "owlbears", "gnolls", "gazers"];
+const words = ["kobolds", "goblins", "orcs", "chimera", "dragon", "leviathan", "golem", "beholder", "bulette", "mimic", "owlbear", "gnolls", "gazer"];
 
 // define DOM objects
 var wordBlanksEl = document.querySelector(".word-blanks");
@@ -161,7 +161,7 @@ function resetScore() {
     loseCountEl.textContent = loseCount
 
     timerCountEl.textContent = 10
-    wordBlanksEl.textContent = "DR_G_NS"
+    wordBlanksEl.textContent = "G _ B L I _ _"
 }
 
 init();
