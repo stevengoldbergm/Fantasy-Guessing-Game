@@ -21,6 +21,7 @@ startButtonEl.addEventListener("click", startGame) // NOTE: You can't use parent
 function startGame(event) {
     // Turn off the startGame button
     startButtonEl.disabled = true;
+    resetButtonEl.disabled = true;
 
     // Randomly select a word.
     let randomWord = words[Math.floor(Math.random() * words.length)];
@@ -147,6 +148,7 @@ function gameOver() {
         loseHistory = localStorage.setItem("losses", loseCount)
     }
     startButtonEl.disabled = false;
+    resetButtonEl.disabled = false;
 }
 
 resetButtonEl.addEventListener("click", resetScore)
